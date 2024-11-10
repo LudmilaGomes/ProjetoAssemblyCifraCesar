@@ -1,0 +1,15 @@
+Disassembly
+
+00401000                    start:
+00401000 8B0D00304000           mov     ecx,[off_00403000]
+00401006 8B1504304000           mov     edx,[off_00403004]
+0040100C BB00000000             mov     ebx,0
+00401011 33C0                   xor     eax,eax
+
+comparação dos valores produzidos por diferentes instruções de atribuição
+do valor 0 aos registradores
+
+// mov     ecx, nulo [nulo dd 0]
+// mov     edx, nulo2 [nulo2 dd 00]
+// mov     ebx, 0
+// xor     eax, eax
